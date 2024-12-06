@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order</title>
+    <link rel="stylesheet" href="estilos4.css">
+</head>
+<body>
+    <div class="container" id="order-form">
+        <h1>Ordena tu comida</h1>
+        <form id="orderForm">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Número de telefono:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="food">Selecciona el apartado que quieres:</label>
+            <select id="food" name="food" required>
+                <option value="">--Select an option--</option>
+                <option value="Pizza">desayuno</option>
+                <option value="Burger">comida</option>
+                <option value="Pasta">desayuno y bebida</option>
+                <option value="Salad">comida y bebida</option>
+            </select>
+
+            <label for="address">Escribe tu pedido:</label>
+            <textarea id="address" name="address" rows="3" placeholder="escribe tu pedido" required></textarea>
+
+            <button type="button" onclick="submitOrder()">Place Order</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="success-message">
+        <h1>Order Confirmed!</h1>
+        <p class="success-message">Thank you for your order. Your delicious meal is on its way!</p>
+    </div>
+
+    <script>
+        function submitOrder() {
+            const form = document.getElementById('orderForm');
+            if (form.checkValidity()) {
+                document.getElementById('order-form').classList.add('hidden');
+                document.getElementById('success-message').classList.remove('hidden');
+            } else {
+                form.reportValidity();
+            }
+        }
+    </script>
+</body>
+</html>

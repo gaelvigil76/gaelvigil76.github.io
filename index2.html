@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Italiano Vigil</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Restaurante Italiano Vigil</h1>
+            <p>Autenticidad y tradición en cada plato.</p>
+        </div>
+    </header>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#carousel">Galería</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#logros">Logros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Acerca de Nosotros</h2>
+                <p>Desde 1995, el Restaurante Vigil es el lugar donde la cocina italiana auténtica cobra vida. Nuestros chefs combinan técnicas tradicionales con ingredientes frescos y de alta calidad.</p>
+            </div>
+        </section>
+
+        <section id="carousel" class="section">
+            <div class="container">
+                <h2>Galería</h2>
+                <div class="carousel">
+                    <div class="slides">
+                        <img src="assets/comidagourmet.webp" alt="Plato Italiano 1">
+                        <img src="assets/comidagour.webp" alt="Plato Italiano 2">
+                        <img src="assets/pastita.webp" alt="Interior del Restaurante">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section">
+            <div class="container">
+                <h2>Menú más comun</h2>
+                <ul>
+                    <li>Risotto perdido</li>
+                    <li>Ravioli rico</li>
+                    <li>Pasta enamorada</li>
+                    <li>Tiramisú Clásico</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="logros" class="section">
+            <div class="container">
+                <h2>Logros</h2>
+                <p>Premios y reconocimientos:</p>
+                <ul>
+                    <li>Premio al Mejor Restaurante Italiano en Oaxaca (2022).</li>
+                    <li>Certificado de Excelencia en Gastronomía.</li>
+                    <li>Miles de clientes satisfechos en Oax y extranjeros.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Dirección: Calle Garcias Vigil no.25</p>
+            <p>Teléfono: 9531107039</p>
+            <p>Email: gaelinho234@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="app2.js"></script>
+</body>
+</html>
